@@ -109,7 +109,7 @@
 	 - `sudo ./install auto`
 	 - `sudo service codedeploy-agent start`
    - `sudo apt -y update`
-   - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
+   - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash` (then either refresh bash or read the last instructions)
    - `nvm i 14`
    - `nvm use 14`
    - `sudo npm install -g pm2`
