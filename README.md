@@ -109,17 +109,11 @@
 	 - `sudo ./install auto`
 	 - `sudo service codedeploy-agent start`
    - `sudo apt -y update`
-   - `curl --silent --location https://deb.nodesource.com/setup_14.x | bash -`
-   - `sudo apt -y install nodejs`
-   - `sudo apt -y install npm`
+   - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash``
+   - `nvm i 14
+   - `nvm use 14
    - `sudo npm install -g pm2`
    - `sudo pm2 update`
-   - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
-   - `nvm ls-remote`
-   - `nvm ls`
-   - `nvm i v14.17.1`
-   - `nvm i v16.4.0`
-   - `nvm use 14`
 
 ## 6. Create EC2 application
 
