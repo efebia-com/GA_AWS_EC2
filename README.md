@@ -109,6 +109,18 @@
 	 - `sudo chmod +x ./install`
 	 - `sudo ./install auto`
 	 - `sudo service codedeploy-agent start`
+   - `sudo apt -y update`
+   - `curl --silent --location https://deb.nodesource.com/setup_14.x | bash -`
+   - `sudo apt -y install nodejs`
+   - `sudo apt -y install npm`
+   - `sudo npm install -g pm2`
+   - `sudo pm2 update`
+   - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
+   - `nvm ls-remote`
+   - `nvm ls`
+   - `nvm i v14.17.1`
+   - `nvm i v16.4.0`
+   - `nvm use 14`
 
 ## 6. Create EC2 application
 
@@ -147,29 +159,12 @@ files:
     destination: /home/ubuntu
 
 hooks:
-  BeforeInstall:
-   - location: before-install.sh
-     timeout: 300
-     runas: root
   AfterInstall:
    - location: after-install.sh
      timeout: 300
-     runas: root
   ApplicationStart:
    - location: application-start.sh
      timeout: 300
-     runas: root
-```
-
- - Create a file `before-install.sh` containing the following:
-```shell
-apt -y update
-
-curl --silent --location https://rpm.nodesource.com/setup_4.x | bash -
-apt -y install nodejs
-apt -y install npm
-npm install -g pm2
-pm2 update
 ```
 
  - Create a file `after-install.sh` containing the following:

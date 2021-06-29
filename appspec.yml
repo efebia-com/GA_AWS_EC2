@@ -6,15 +6,9 @@ files:
     destination: /home/ubuntu
 
 hooks:
-  BeforeInstall:
-   - location: before-install.sh
-     timeout: 300
-     runas: root
   AfterInstall:
    - location: after-install.sh
      timeout: 300
-     runas: root
   ApplicationStart:
    - location: application-start.sh
      timeout: 300
-     runas: root
