@@ -1,4 +1,3 @@
-
 ﻿# Auto Deploy in AWS EC2 using GitHub Actions and CodeDeploy
 
 ## Prerequisites
